@@ -37,8 +37,6 @@ def get_english_meaning(emoticon)
   emoticons.each do |dictionary, emoticon_hash|
     if dictionary == "get_meaning"
       emoticon_hash.each do |english_emoticon, japanese_emoticon|
-        #puts western_emoticon
-        #puts english_emoticon
         if western_emoticon == english_emoticon
           return_value = japanese_emoticon
         end
