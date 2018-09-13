@@ -5,6 +5,8 @@ def load_library(file_path)
   puts emoticons
 end
 
+load_library("./lib/emoticons.yml")
+
 def get_japanese_emoticon(western)
   emoticons = load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
