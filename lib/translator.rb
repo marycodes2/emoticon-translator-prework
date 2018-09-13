@@ -8,9 +8,10 @@ end
 load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon(western)
-  # code goes here
+  
+  
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(emoticon)
+  
 end
