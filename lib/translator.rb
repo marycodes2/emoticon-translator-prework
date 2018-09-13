@@ -17,7 +17,7 @@ puts load_library("./lib/emoticons.yml")
 def get_japanese_emoticon(file_path, western_emoticon)
   emoticons = load_library(file_path)
   emoticons.each do |dictionary, emoticon_hash|
-    if emoticon_list[0] == western
+    if dictionary == "get_emoticon"
       emoticon_list[1]
     else
       sorry_message = "Sorry, that emoticon was not found"
