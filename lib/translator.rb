@@ -38,7 +38,7 @@ def get_english_meaning(file_path, emoticon)
     if dictionary == "get_meaning"
       emoticon_hash.each do |japanese_emoticon, meaning|
         if japanese_emoticon == emoticon
-          return_value = japanese_emoticon
+          return_value = meaning
         end
       end
     end
