@@ -22,5 +22,3 @@ def get_english_meaning(emoticon)
     end
   end
 end
-
-puts get_english_meaning('(^_-)')
