@@ -7,7 +7,7 @@ end
 
 load_library('emoticons.yml')
 
-def get_japanese_emoticon
+def get_japanese_emoticon(western)
   # code goes here
 end
 
