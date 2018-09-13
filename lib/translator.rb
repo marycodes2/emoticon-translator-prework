@@ -8,10 +8,16 @@ end
 load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon(western)
-  
+  load_library("./lib/emoticons.yml")
+  emoticons.each do |meaning, emoticon_list|
+    if emoticon_list[0] == western
+      emoticon_list[1]
   
 end
 
 def get_english_meaning(emoticon)
-  
+  load_library("./lib/emoticons.yml")
+  emoticons.each do |meaning, emoticon_list|
+    if emoticon_list[1] == emoticon
+      meaning
 end
