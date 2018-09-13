@@ -26,6 +26,7 @@ def get_japanese_emoticon(file_path, western_emoticon)
       end
     end
   end 
+  return_value
 end 
 
 puts get_japanese_emoticon("./lib/emoticons.yml", ":)")
