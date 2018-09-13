@@ -13,6 +13,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, western_emoticon)
+  return_value = ""
   emoticons = load_library(file_path)
   emoticons.each do |dictionary, emoticon_hash|
     if dictionary == "get_emoticon"
@@ -20,7 +21,7 @@ def get_japanese_emoticon(file_path, western_emoticon)
         #puts western_emoticon
         #puts english_emoticon
         if western_emoticon == english_emoticon
-          return japanese_emoticon
+          return_value = japanese_emoticon
         end
       end
     end
