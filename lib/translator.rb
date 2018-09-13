@@ -15,10 +15,12 @@ end
 puts load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon(file_path, western_emoticon)
-  emoticons = load_library("./lib/emoticons.yml")
+  emoticons = load_library(file_path)
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[0] == western
       emoticon_list[1]
+    else
+      sorry_message = "Sorry, that emoticon was not found"
     end
   end
 end
