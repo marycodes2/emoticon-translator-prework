@@ -10,6 +10,8 @@ def get_japanese_emoticon(western)
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[0] == western
       emoticon_list[1]
+    end
+  end
   
 end
 
@@ -18,4 +20,6 @@ def get_english_meaning(emoticon)
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[1] == emoticon
       meaning
+    end
+  end
 end
