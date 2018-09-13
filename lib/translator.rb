@@ -18,8 +18,6 @@ def get_japanese_emoticon(file_path, western_emoticon)
   emoticons = load_library(file_path)
   emoticons.each do |dictionary, emoticon_hash|
     if dictionary == "get_emoticon" and 
-      if emoticons
-      emoticon_list[1]
     else
       sorry_message = "Sorry, that emoticon was not found"
     end
