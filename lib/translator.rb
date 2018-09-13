@@ -35,7 +35,7 @@ def get_english_meaning(emoticon)
   return_value = "Sorry, that emoticon was not found"
   emoticons = load_library(file_path)
   emoticons.each do |dictionary, emoticon_hash|
-    if dictionary == "get_emoticon"
+    if dictionary == "get_meaning"
       emoticon_hash.each do |english_emoticon, japanese_emoticon|
         #puts western_emoticon
         #puts english_emoticon
