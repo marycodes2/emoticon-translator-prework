@@ -21,8 +21,8 @@ def get_japanese_emoticon(file_path, western_emoticon)
       emoticon_hash.each do |english_emoticon, japanese_emoticon|
         if western_emoticon == english_emoticon
           return japanese_emoticon
-    else
-      sorry_message = "Sorry, that emoticon was not found"
+        else
+          sorry_message = "Sorry, that emoticon was not found"
     end
   end
 end
