@@ -18,7 +18,7 @@ def get_japanese_emoticon(file_path, western_emoticon)
     if dictionary == "get_emoticon"
       emoticon_hash.each do |english_emoticon, japanese_emoticon|
         if western_emoticon == english_emoticon
-          return_value = japanese_emoticon
+          return japanese_emoticon
         end
       end
     end
