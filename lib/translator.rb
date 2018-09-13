@@ -2,16 +2,14 @@ require "yaml"
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  emoticons
+  puts emoticons
 end
-
-load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon(western)
   load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[0] == western
-      return emoticon_list[1]
+      emoticon_list[1]
   
 end
 
@@ -19,5 +17,5 @@ def get_english_meaning(emoticon)
   load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[1] == emoticon
-      return meaning
+      meaning
 end
