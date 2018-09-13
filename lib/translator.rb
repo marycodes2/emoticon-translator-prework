@@ -18,7 +18,7 @@ def get_english_meaning(emoticon)
   emoticons = load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
     if emoticon_list[1] == emoticon
-      meaning
+      return meaning
     end
   end
 end
