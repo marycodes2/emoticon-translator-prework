@@ -28,6 +28,8 @@ def get_japanese_emoticon(file_path, western_emoticon)
   end 
 end 
 
+get_japanese_emoticon("./lib/emoticons.yml", )
+
 def get_english_meaning(emoticon)
   emoticons = load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
