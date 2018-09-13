@@ -23,6 +23,7 @@ def get_japanese_emoticon(file_path, western_emoticon)
           return japanese_emoticon
         else
           sorry_message = "Sorry, that emoticon was not found"
+          print sorry_message
     end
   end
 end
