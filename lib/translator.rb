@@ -24,10 +24,10 @@ def get_japanese_emoticon(file_path, western_emoticon)
         else
           sorry_message = "Sorry, that emoticon was not found"
           print sorry_message
+        end
+      end
     end
-  end
-end
-
+  end 
 def get_english_meaning(emoticon)
   emoticons = load_library("./lib/emoticons.yml")
   emoticons.each do |meaning, emoticon_list|
