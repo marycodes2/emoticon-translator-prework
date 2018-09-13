@@ -32,10 +32,18 @@ end
 puts get_japanese_emoticon("./lib/emoticons.yml", ":)")
 
 def get_english_meaning(emoticon)
-  emoticons = load_library("./lib/emoticons.yml")
-  emoticons.each do |meaning, emoticon_list|
-    if emoticon_list[1] == emoticon
-      return meaning
+  return_value = "Sorry, that emoticon was not found"
+  emoticons = load_library(file_path)
+  emoticons.each do |dictionary, emoticon_hash|
+    if dictionary == "get_emoticon"
+      emoticon_hash.each do |english_emoticon, japanese_emoticon|
+        #puts western_emoticon
+        #puts english_emoticon
+        if western_emoticon == english_emoticon
+          return_value = japanese_emoticon
+        end
+      end
     end
-  end
-end
+  end 
+  return_value
+end 
